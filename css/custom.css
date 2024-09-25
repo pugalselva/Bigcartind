@@ -1,0 +1,74 @@
+/* your styles go here */
+.navbar-brand img {
+    width: 100px; 
+    height: auto;
+    margin-right: 50px;
+  }
+
+  /* login  */
+  /* General navbar buttons container styling */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Styling for the login and register links */
+.navbar-buttons ul.menu {
+    list-style-type: none; 
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-buttons ul.menu li {
+    display: inline; 
+}
+
+.navbar-buttons ul.menu li a {
+    text-decoration: none;
+    font-size: 16px; 
+    color: #007bff; 
+    padding: 5px 10px; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-buttons ul.menu li a:hover {
+    color: #0056b3; 
+}
+
+/* Styling the search and cart buttons */
+.navbar-buttons .btn {
+    padding: 5px 15px; 
+    font-size: 16px; 
+}
+
+/* Shopping cart button specific styling */
+.navbar-buttons #basket-overview a {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.navbar-buttons #basket-overview a i {
+    margin-right: 5px;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .navbar-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar-buttons ul.menu {
+        flex-direction: column; /* Stack login and register links */
+    }
+}
+#top #login-modal .modal-header {
+    background: #FF9900;
+  }
+  
+
