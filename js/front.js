@@ -223,6 +223,53 @@ $.fn.alignElementsSameHeight = function () {
         children.innerHeight(maxHeight);
 
     });
+    $(document).ready(function(){
+        $(".product-slider").owlCarousel({
+          items: 4, // Number of visible items
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 2
+            },
+            1000: {
+              items: 4
+            }
+          }
+        });
+      });
+      //login page
+      document.querySelector('#login-modal form').addEventListener('submit', function(event) {
+        const email = document.getElementById('email-modal').value;
+        const password = document.getElementById('password-modal').value;
+    
+        if (!email || !password) {
+            event.preventDefault(); // Prevent form submission
+            alert('Please fill in all fields.');
+        }
+    });
+
+    //top and Bottom
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.back-to-top').fadeIn();
+            } else {
+                $('.back-to-top').fadeOut();
+            }
+        });
+
+        $('.back-to-top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 500);
+        });
+    });
+          
 
 
 
