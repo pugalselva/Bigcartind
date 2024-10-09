@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bigcart India: e-commerce template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS-->
+    <link
+      rel="stylesheet"
+      href="vendor/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- Google fonts - Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
+    />
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.css"
+    />
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet" />
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <!-- navbar-->
+    <header class="header mb-5">
+      <!--
+      *** TOPBAR ***
+      _________________________________________________________
+      -->
+      <div id="top">
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offer mb-3 mb-lg-0"><a href="#" class="btn btn-success btn-sm">Offer of the day</a><a href="#" class="ml-1">Get flat 35% off on orders over $50!</a></div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <ul class="menu list-inline mb-0">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                <li class="list-inline-item"><a href="register.html">Register</a></li>
+                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="#">Recently viewed</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div
+          id="login-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="Login"
+          aria-hidden="true"
+          class="modal fade"
+        >
+          <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Customer Login</h5>
+                <button
+                  type="button"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  class="close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="customer-orders.html" method="post">
+                  <div class="form-group">
+                    <input
+                      id="email-modal"
+                      type="text"
+                      placeholder="Email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      id="password-modal"
+                      type="password"
+                      placeholder="Password"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <p class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-sign-in"></i> Log in
+                    </button>
+                  </p>
+                </form>
+                <p class="text-center text-muted">Already have an account?</p>
+                <p class="text-center text-muted">
+                  <a href="register.html"><strong>Register now</strong></a> to
+                  enjoy exclusive discounts and offers!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *** TOP BAR END ***-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html" class="navbar-brand home">
+            <img
+              src="img/Bigcart.jpg"
+              alt="Bigcart-logo"
+              class="d-none d-md-inline-block"
+            />
+            <img
+              src="img/Bigcart.jpg"
+              alt="Bigcart-logo"
+              class="d-inline-block d-md-none"
+            />
+            <span class="sr-only">Bigcart India - go to homepage</span>
+          </a>
+          <div class="navbar-buttons">
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#navigation"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-align-justify"></i>
+            </button>
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#search"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <span class="sr-only">Toggle search</span>
+              <i class="fa fa-search"></i>
+            </button>
+            <a
+              href="basket.html"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+            <a href="#" class="btn btn-outline-secondary navbar-toggler" data-toggle="modal" data-target="#login-modal" >
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </a>
+          </div>
+          <div id="navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Men<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Men's Clothing -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Clothing</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >T-shirts</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Shirts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Men's Shoes -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Shoes</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Trainers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Sandals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Hiking Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Casual</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Men's Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Bags</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Belts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Sunglasses</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Caps & Hats</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Kids Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kids</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Clothing</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Accessories</a
+                            >
+                          </li>
+                        </ul>
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/kids-banner.jpg"
+                              alt="Kids Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Ladies<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Women's Clothing -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Clothing</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >T-shirts</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Shirts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Women's Shoes -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Shoes</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Trainers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Sandals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Hiking Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Casual</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Women's Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Jewelry</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Bags</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Scarves</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Sunglasses</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Kids Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kids</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Clothing</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Accessories</a
+                            >
+                          </li>
+                        </ul>
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/kids-banner.jpg"
+                              alt="Kids Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Home Appliances<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Kitchen Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kitchen Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="microwave.html" class="nav-link"
+                              >Microwaves</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="refrigerators.html" class="nav-link"
+                              >Refrigerators</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="dishwashers.html" class="nav-link"
+                              >Dishwashers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mixers.html" class="nav-link"
+                              >Blenders & Mixers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="coffee-makers.html" class="nav-link"
+                              >Coffee Makers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Cleaning Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Cleaning Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="vacuum-cleaners.html" class="nav-link"
+                              >Vacuum Cleaners</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="washing-machines.html" class="nav-link"
+                              >Washing Machines</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="steam-cleaners.html" class="nav-link"
+                              >Steam Cleaners</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="irons.html" class="nav-link">Irons</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Other Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Other Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="air-purifiers.html" class="nav-link"
+                              >Air Purifiers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="humidifiers.html" class="nav-link"
+                              >Humidifiers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="heaters.html" class="nav-link">Heaters</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Featured Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/home-appliances-banner.jpg"
+                              alt="Home Appliances Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Electronics<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Mobiles -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Mobiles</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="smartphones.html" class="nav-link"
+                              >Smartphones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="feature-phones.html" class="nav-link"
+                              >Feature Phones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mobile-cases.html" class="nav-link"
+                              >Mobile Cases</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mobile-chargers.html" class="nav-link"
+                              >Mobile Chargers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="power-banks.html" class="nav-link"
+                              >Power Banks</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="headphones.html" class="nav-link"
+                              >Headphones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="smart-watches.html" class="nav-link"
+                              >Smart Watches</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="charging-cables.html" class="nav-link"
+                              >Charging Cables</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="phone-stands.html" class="nav-link"
+                              >Phone Stands</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="screen-protectors.html" class="nav-link"
+                              >Screen Protectors</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Speakers -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Speakers</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="bluetooth-speakers.html" class="nav-link"
+                              >Bluetooth Speakers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="smart-speakers.html" class="nav-link"
+                              >Smart Speakers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="home-theaters.html" class="nav-link"
+                              >Home Theaters</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="soundbars.html" class="nav-link"
+                              >Soundbars</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="portable-speakers.html" class="nav-link"
+                              >Portable Speakers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Health Care Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Health Care Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a
+                              href="blood-pressure-monitors.html"
+                              class="nav-link"
+                              >Blood Pressure Monitors</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="thermometers.html" class="nav-link"
+                              >Digital Thermometers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="weighing-scales.html" class="nav-link"
+                              >Weighing Scales</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="massagers.html" class="nav-link"
+                              >Massagers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="air-purifiers.html" class="nav-link"
+                              >Air Purifiers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="navbar-nav mr-auto">
+              <div
+                id="search-not-mobile"
+                class="navbar-collapse collapse"
+              ></div>
+              <a
+                data-toggle="collapse"
+                href="#search"
+                class="btn navbar-btn btn-primary d-none d-lg-inline-block"
+                ><span class="sr-only">Toggle search</span
+                ><i class="fa fa-search"></i
+              ></a>
+              <div
+                id="basket-overview"
+                class="navbar-collapse collapse d-none d-lg-block"
+              >
+                <a href="basket.html" class="btn btn-primary navbar-btn"
+                  ><i class="fa fa-shopping-cart"></i><span>Cart</span></a
+                >
+              </div>
+              <div
+                id="basket-overview"
+                class="navbar-collapse collapse d-none d-lg-block"
+              >
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#login-modal"
+                  class="btn btn-primary navbar-btn"
+                  ><i class="fa fa-sign-in" aria-hidden="true"></i
+                  ><span>Login</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="search" class="collapse">
+        <div class="container">
+          <form role="search" class="ml-auto">
+            <div class="input-group">
+              <input type="text" placeholder="Search" class="form-control" />
+              <div class="input-group-append">
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div id="all">
+      <div id="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- breadcrumb-->
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Ladies</a></li>
+                  <li class="breadcrumb-item"><a href="#">Clothing</a></li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-3 order-2 order-lg-1">
+              <!--
+              *** MENUS AND FILTERS ***
+              _________________________________________________________
+              -->
+              <!-- Categories Sidebar -->
+              <div class="card sidebar-menu mb-4">
+                <div class="card-header">
+                  <h3 class="h4 card-title">Categories</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="nav nav-pills flex-column category-menu">
+                    <li>
+                      <a href="category.html" class="nav-link">
+                        Women's Clothing
+                        <span class="badge badge-secondary">42</span>
+                      </a>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="category.html" class="nav-link">Dresses</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link">Tops</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link">Jackets</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link"
+                            >Accessories</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="category.html" class="nav-link active">
+                        Brands <span class="badge badge-light">123</span>
+                      </a>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="category.html" class="nav-link">Zara</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link">H&M</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link">Gucci</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link">Prada</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="category.html" class="nav-link"
+                        >Price Discount
+                        <span class="badge badge-secondary">11</span>
+                      </a>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="category.html" class="nav-link">Under ₹50</a>
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link"
+                            >₹50 - ₹100</a
+                          >
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link"
+                            >₹100 - ₹200</a
+                          >
+                        </li>
+                        <li>
+                          <a href="category.html" class="nav-link"
+                            >Above $₹00</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Women's Size Filter -->
+              <div class="card sidebar-menu mb-4">
+                <div class="card-header">
+                  <h3 class="h4 card-title">
+                    Women's Size
+                    <a href="#" class="btn btn-sm btn-danger pull-right"
+                      ><i class="fa fa-times-circle"></i> Clear</a
+                    >
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> XS (8) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> S (15) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> M (20) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> L (18) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> XL (10) </label>
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-default btn-sm btn-primary"
+                    >
+                      <i class="fa fa-pencil"></i> Apply
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Price Discount Filter -->
+              <div class="card sidebar-menu mb-4">
+                <div class="card-header">
+                  <h3 class="h4 card-title">
+                    Discount
+                    <a href="#" class="btn btn-sm btn-danger pull-right"
+                      ><i class="fa fa-times-circle"></i> Clear</a
+                    >
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> 10% Off (14) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> 20% Off (10) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> 30% Off (20) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> 50% Off (13) </label>
+                      </div>
+                      <div class="checkbox">
+                        <label> <input type="checkbox" /> 70% Off (10) </label>
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn btn-default btn-sm btn-primary"
+                    >
+                      <i class="fa fa-pencil"></i> Apply
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- *** MENUS AND FILTERS END ***-->
+              <div class="banner">
+                <a href="#"
+                  ><img
+                    src="img/women-shirt-0.jpg"
+                    alt="sales 2014"
+                    class="img-fluid"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-9 order-1 order-lg-2">
+              <!-- women -->
+              <div id="productMain" class="row my-4">
+                <div class="col-md-6">
+                  <div
+                    data-slider-id="1"
+                    class="owl-carousel shop-detail-carousel"
+                  >
+                    <div class="item">
+                      <img
+                        src="img/women-shirt-0.jpg"
+                        alt="Motorola Edge 50 Fusion 5G"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="img/women-shirt-1.jpg"
+                        alt="Motorola Edge 50 Fusion 5G"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="img/women-shirt-2.jpg"
+                        alt="Motorola Edge 50 Fusion 5G"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="img/women-shirt-3.jpg"
+                        alt="Motorola Edge 50 Fusion 5G"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="ribbon sale">
+                      <div class="theribbon">SALE</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    
+                    <div class="ribbon new">
+                      <div class="theribbon">NEW</div>
+                      <div class="ribbon-background"></div>
+                    </div> -->
+                </div>
+                <div class="col-md-6">
+                  <div class="box p-4 border rounded shadow-sm">
+                    <h1 class="text-center mb-3">
+                      Leriya Fashion Oversized Shirt for Women <br />
+                    </h1>
+                    <p class="goToDescription text-center">
+                      <a href="#details" class="scroll-to"
+                        >Scroll to product details, material & care and
+                        sizing</a
+                      >
+                    </p>
+                    <!-- Discount section -->
+                    <div class="text-center mb-3">
+                      <span class="text-muted" style="text-decoration: line-through; font-size: 1.5rem;">
+                        ₹799
+                      </span> <!-- MRP price -->
+                      <span class="text-danger ms-2" style="font-size: 1.5rem;">
+                        (38% OFF)
+                      </span> <!-- Discount percentage -->
+                    </div>
+                    
+                    <!-- Discounted price -->
+                    <p class="price text-center display-4 text-danger" id="product-price">
+                      ₹499
+                    </p>
+                    <p class="text-center buttons">
+                      <!-- <a href="basket.html" class="btn btn-primary btn-lg me-2" id="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Add to cart</a> -->
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-lg me-2 add-to-cart-btn"
+                        data-name="Leriya Fashion Oversized Shirt for Women"
+                        data-price="499"
+                      >
+                        <i class="fa fa-shopping-cart"></i> Add to cart
+                      </a>
+                      <a
+                        href="checkout1.html"
+                        class="btn btn-outline-primary btn-lg"
+                        id="buy-now-btn"
+                        ><i class="fa fa-shopping-bag"></i> Buy Now</a
+                      >
+                    </p>
+                  </div>
+                  <div data-slider-id="1" class="owl-thumbs mt-3">
+                    <button class="owl-thumb-item">
+                      <img
+                        src="img/women-shirt-0.jpg"
+                        alt="Thumbnail 1"
+                        class="img-fluid"
+                      />
+                    </button>
+                    <button class="owl-thumb-item">
+                      <img
+                        src="img/women-shirt-1.jpg"
+                        alt="Thumbnail 2"
+                        class="img-fluid"
+                      />
+                    </button>
+                    <button class="owl-thumb-item">
+                      <img
+                        src="img/women-shirt-2.jpg"
+                        alt="Thumbnail 3"
+                        class="img-fluid"
+                      />
+                    </button>
+                    <button class="owl-thumb-item">
+                      <img
+                        src="img/women-shirt-3.jpg"
+                        alt="Thumbnail 4"
+                        class="img-fluid"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Details -->
+              <div id="details" class="box">
+                <p></p>
+                <h3>Product Details</h3>
+                <p>
+                  The
+                  <strong>Motorola Edge 50 Fusion 5G (Marshmallow Blue)</strong>
+                  is a powerful smartphone with the following key features:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Display:</strong> 6.55-inch FHD+ OLED display with a
+                    144Hz refresh rate and HDR10+ support for an immersive
+                    viewing experience.
+                  </li>
+                  <li>
+                    <strong>Processor:</strong> Powered by the Qualcomm
+                    Snapdragon 7s Gen 2 processor, an octa-core chipset clocked
+                    at up to 2.4GHz, ensuring efficient multitasking.
+                  </li>
+                  <li>
+                    <strong>Memory:</strong> 8GB of RAM coupled with 128GB of
+                    internal storage, providing smooth performance and ample
+                    space for apps and media.
+                  </li>
+                  <li>
+                    <strong>Battery:</strong> 4400mAh battery with TurboPower
+                    fast charging support.
+                  </li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <table
+                  class="moto"
+                  style="
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 20px auto;
+                    font-family: Arial, sans-serif;
+                    text-align: left;
+                  "
+                >
+                  <tr>
+                    <th
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        background-color: #4caf50;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                      "
+                    >
+                      OS
+                    </th>
+                    <th
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        background-color: #2196f3;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                      "
+                    >
+                      RAM
+                    </th>
+                    <th
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        background-color: #ffc107;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                      "
+                    >
+                      GPS
+                    </th>
+                    <th
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        background-color: #ff5722;
+                        color: white;
+                        text-transform: uppercase;
+                        text-align: center;
+                      "
+                    >
+                      Other Display Features
+                    </th>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        text-align: center;
+                      "
+                    >
+                      Android
+                    </td>
+                    <td
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        text-align: center;
+                      "
+                    >
+                      8 GB
+                    </td>
+                    <td
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        text-align: center;
+                      "
+                    >
+                      GLONASS
+                    </td>
+                    <td
+                      style="
+                        border: 1px solid #ddd;
+                        padding: 12px;
+                        text-align: center;
+                      "
+                    >
+                      Wireless
+                    </td>
+                  </tr>
+                </table>
+
+                <h3>About This Item</h3>
+                <ul>
+                  <li>
+                    The 50 MP Ultra Pixel OIS Camera features the Sony LYTIA
+                    700C sensor, designed to capture stunning shots at night
+                    with advanced low-light capabilities.
+                  </li>
+                  <li>
+                    4K Video Recording with a 13MP Ultrawide + Macro Camera and
+                    a 32 MP Front Camera. The 120-degree ultra-wide-angle lens
+                    captures more of the scene, allowing you to go ultra-wide or
+                    zoom in effortlessly.
+                  </li>
+                </ul>
+
+                <blockquote>
+                  <p>
+                    <em
+                      >Define your style this season with Armani's new range of
+                      trendy tops, crafted with intricate details. Create a chic
+                      statement look by pairing this lace number with skinny
+                      jeans and pumps.</em
+                    >
+                  </p>
+                </blockquote>
+                <hr />
+                <div class="social">
+                  <h4>Share with Your Friends</h4>
+                  <p>
+                    <a href="#" class="external facebook"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                    <a href="#" class="external gplus"
+                      ><i class="fa fa-google-plus"></i
+                    ></a>
+                    <a href="#" class="external twitter"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="#" class="email"><i class="fa fa-envelope"></i></a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="row same-height-row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="box same-height">
+                    <h3>You may also like these products</h3>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Women-t-shirt.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Women-t-shirt.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img
+                        src="img/Women-t-shirt.jpg"
+                        alt=""
+                        class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>T-shirt</h3>
+                      <p class="price">₹999.0</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Cotton-pant.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Cotton-pant.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img src="img/Cotton-pant.jpg" alt="" class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>Trasa-Pant</h3>
+                      <p class="price">₹ 499</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Metro-sliper.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Metro-sliper.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img src="img/Metro-sliper.jpg" alt="" class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>Metro</h3>
+                      <p class="price">₹ 800</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+              </div>
+              <div class="row same-height-row">
+                <div class="col-md-3 col-sm-6">
+                  <div class="box same-height">
+                    <h3>Products viewed recently</h3>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Dervin-Glass.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/Dervin-Glass.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img src="img/Dervin-Glass.jpg" alt="" class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>Dervin</h3>
+                      <p class="price">₹390</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/t-shirt-2.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/t-shirt-2.jpg Gym T Shirts.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img
+                        src="img/t-shirt-2.jpg Gym T Shirts.jpg"
+                        alt=""
+                        class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>T-Shirts</h3>
+                      <p class="price">₹799</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product same-height">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/kurta-1.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="Ladies-product.html"
+                            ><img
+                              src="img/kurta-1.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="Ladies-product.html" class="invisible"
+                      ><img src="img/kurta-1.jpg" alt="" class="img-fluid"
+                    /></a>
+                    <div class="text">
+                      <h3>Kurta</h3>
+                      <p class="price">₹999</p>
+                    </div>
+                  </div>
+                  <!-- /.product-->
+                </div>
+              </div>
+            </div>
+            <!-- /.col-md-9-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    *** FOOTER ***
+    ____________________________________________________
+    -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Pages</h4>
+            <ul class="list-unstyled">
+              <li><a href="text.html">About us</a></li>
+              <li><a href="text.html">Terms and conditions</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <hr />
+            <h4 class="mb-3">User section</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" data-toggle="modal" data-target="#login-modal"
+                  >Login</a
+                >
+              </li>
+              <li><a href="register.html">Regiter</a></li>
+            </ul>
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Top categories</h4>
+            <h5>Men</h5>
+            <ul class="list-unstyled">
+              <li><a href="category.html">T-shirts</a></li>
+              <li><a href="category.html">Shirts</a></li>
+              <li><a href="category.html">Accessories</a></li>
+            </ul>
+            <h5>Ladies</h5>
+            <ul class="list-unstyled">
+              <li><a href="category.html">T-shirts</a></li>
+              <li><a href="category.html">Skirts</a></li>
+              <li><a href="category.html">Pants</a></li>
+              <li><a href="category.html">Accessories</a></li>
+            </ul>
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Where to find us</h4>
+            <p>
+              <strong>Bigcart India Ltd.</strong><br />195' 2nd STREET,<br />MGB
+              THEATRE ROAD,<br />TIRUPUR. <br /><strong>641 604</strong>
+            </p>
+            <a href="contact.html">Go to contact page</a>
+            <hr class="d-block d-md-none" />
+          </div>
+          <!-- /.col-lg-3-->
+          <div class="col-lg-3 col-md-6">
+            <h4 class="mb-3">Stay in touch</h4>
+            <p class="social">
+              <a href="#" class="facebook external"
+                ><i class="fa fa-facebook"></i></a
+              ><a href="#" class="twitter external"
+                ><i class="fa fa-twitter"></i></a
+              ><a href="#" class="instagram external"
+                ><i class="fa fa-instagram"></i></a
+              ><a href="#" class="gplus external"
+                ><i class="fa fa-google-plus"></i></a
+              ><a href="#" class="email external"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </p>
+          </div>
+          <!-- /.col-lg-3-->
+        </div>
+        <!-- /.row-->
+      </div>
+      <!-- /.container-->
+    </div>
+    <!-- /#footer-->
+    <!-- *** FOOTER END ***-->
+
+    <!--
+    *** COPYRIGHT ***
+    _________________________________________________________
+    -->
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-2 mb-lg-0">
+            <p class="text-center text-lg-left">
+              &copy; <a href="#">www.pearlsys.in</a>, All Right Reserved.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p class="text-center text-lg-right">
+              Designed By <a href="http://www.pearlsys.in/">PearlSys</a>
+              <!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *** COPYRIGHT END ***-->
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
+    <script src="js/front.js"></script>
+  </body>
+</html>

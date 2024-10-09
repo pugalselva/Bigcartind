@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Obaju : e-commerce template</title>
+    <title>Bigcart India: e-commerce template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -99,6 +99,9 @@
                 <a href="basket.html" class="btn btn-outline-secondary navbar-toggler">
                     <i class="fa fa-shopping-cart"></i>
                 </a>
+                <a href="#" class="btn btn-outline-secondary navbar-toggler" data-toggle="modal" data-target="#login-modal" >
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+              </a>
             </div>
             <div id="navigation" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
@@ -347,13 +350,11 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">Ladies</li>
+                  <li aria-current="page" class="breadcrumb-item active">View</li>
+                  <li aria-current="page" class="breadcrumb-item active">All</li>
                 </ol>
               </nav>
-              <div class="box">
-                <h1>Ladies</h1>
-                <p>In our Ladies department we offer wide selection of the best products we have found and carefully selected worldwide.</p>
-              </div>
+              
               <div class="box info-bar">
                 <div class="row">
                   <div class="col-md-12 col-lg-4 products-showing">Showing <strong>12</strong> of <strong>25</strong> products</div>
@@ -362,7 +363,7 @@
                       <div class="products-number"><strong>Show</strong><a href="#" class="btn btn-sm btn-primary">12</a><a href="#" class="btn btn-outline-secondary btn-sm">24</a><a href="#" class="btn btn-outline-secondary btn-sm">All</a><span>products</span></div>
                       <div class="products-sort-by mt-2 mt-lg-0"><strong>Sort by</strong>
                         <select name="sort-by" class="form-control">
-                          <option>Price</option>
+                          <option>price</option>
                           <option>Name</option>
                           <option>Sales first</option>
                         </select>
@@ -376,16 +377,16 @@
                   <div class="product">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="men-product.html"><img src="img/Men-Casual-Shirt-0.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="men-product.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="men-product.html" class="invisible"><img src="img/Men-Casual-Shirt-0.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3><a href="detail.html">Fur coat with very but very very long name</a></h3>
+                      <h3><a href="detail.html">Lymio Casual Shirt for Men</a></h3>
                       <p class="price"> 
-                        <del></del>$143.00
+                        <del></del>₹299
                       </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                      <p class="buttons"><a href="men-product.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
                     </div>
                     <!-- /.text-->
                   </div>
@@ -395,136 +396,16 @@
                   <div class="product">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="Ladies-product.html"><img src="img/women-shirt-0.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/women-shirt-0.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3><a href="detail.html">White Blouse Armani</a></h3>
+                      <h3><a href="Ladies-product.html">Leriya Fashion Women</a></h3>
                       <p class="price"> 
-                        <del>$280</del>$143.00
+                        <del></del>₹499.00
                       </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
-                    </div>
-                    <!-- /.text-->
-                    <div class="ribbon sale">
-                      <div class="theribbon">SALE</div>
-                      <div class="ribbon-background"></div>
-                    </div>
-                    <!-- /.ribbon-->
-                    <div class="ribbon new">
-                      <div class="theribbon">NEW</div>
-                      <div class="ribbon-background"></div>
-                    </div>
-                    <!-- /.ribbon-->
-                    <div class="ribbon gift">
-                      <div class="theribbon">GIFT</div>
-                      <div class="ribbon-background"></div>
-                    </div>
-                    <!-- /.ribbon-->
-                  </div>
-                  <!-- /.product            -->
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
-                      </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                      <p class="price"> 
-                        <del></del>$143.00
-                      </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
-                    </div>
-                    <!-- /.text-->
-                  </div>
-                  <!-- /.product            -->
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
-                      </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3><a href="detail.html">Black Blouse Versace</a></h3>
-                      <p class="price"> 
-                        <del></del>$143.00
-                      </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
-                    </div>
-                    <!-- /.text-->
-                  </div>
-                  <!-- /.product            -->
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
-                      </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3><a href="detail.html">White Blouse Versace</a></h3>
-                      <p class="price"> 
-                        <del></del>$143.00
-                      </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
-                    </div>
-                    <!-- /.text-->
-                    <div class="ribbon new">
-                      <div class="theribbon">NEW</div>
-                      <div class="ribbon-background"></div>
-                    </div>
-                    <!-- /.ribbon-->
-                  </div>
-                  <!-- /.product            -->
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
-                      </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3><a href="detail.html">Fur coat</a></h3>
-                      <p class="price"> 
-                        <del></del>$143.00
-                      </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
-                    </div>
-                    <!-- /.text-->
-                    <div class="ribbon gift">
-                      <div class="theribbon">GIFT</div>
-                      <div class="ribbon-background"></div>
-                    </div>
-                    <!-- /.ribbon-->
-                  </div>
-                  <!-- /.product            -->
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <div class="product">
-                    <div class="flip-container">
-                      <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
-                      </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
-                    <div class="text">
-                      <h3><a href="detail.html">White Blouse Armani</a></h3>
-                      <p class="price"> 
-                        <del>$280</del>$143.00
-                      </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                      <p class="buttons"><a href="Ladies-product.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
                     </div>
                     <!-- /.text-->
                     <div class="ribbon sale">
@@ -549,16 +430,136 @@
                   <div class="product">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="moto.html"><img src="img/moto-1.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="men-product.html"><img src="img/Men Gym T Shirts.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="moto.html" class="invisible"><img src="img/moto-1.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3><a href="detail.html">Black Blouse Versace</a></h3>
+                      <h3><a href="moto.html">MMotorola Edge 50 Fusion 5G</a></h3>
                       <p class="price"> 
-                        <del></del>$143.00
+                        <del></del>₹15,999
                       </p>
-                      <p class="buttons"><a href="detail.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                      <p class="buttons"><a href="moto.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                    </div>
+                    <!-- /.text-->
+                  </div>
+                  <!-- /.product            -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="product">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front"><a href="HomeAppliances.html"><img src="img/Glass-Top-0.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div> -->
+                      </div>
+                    </div><a href="HomeAppliances.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    <div class="text">
+                      <h3><a href="HomeAppliances.html">LPG Gas Stove</a></h3>
+                      <p class="price"> 
+                        <del></del>₹1,499.00
+                      </p>
+                      <p class="buttons"><a href="HomeAppliances.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                    </div>
+                    <!-- /.text-->
+                  </div>
+                  <!-- /.product            -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="product">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front"><a href="HomeAppliances.html"><img src="img/cycle-1.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/cycle-1.jpg" alt="" class="img-fluid"></a></div> -->
+                      </div>
+                    </div><a href="HomeAppliances.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                    <div class="text">
+                      <h3><a href="HomeAppliances.html">Super-Cycle</a></h3>
+                      <p class="price"> 
+                        <del></del>₹2,999
+                      </p>
+                      <p class="buttons"><a href="HomeAppliances.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                    </div>
+                    <!-- /.text-->
+                    <div class="ribbon new">
+                      <div class="theribbon">NEW</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    <!-- /.ribbon-->
+                  </div>
+                  <!-- /.product            -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="product">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front"><a href="HomeAppliances.html"><img src="img/pillow-0.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div> -->
+                      </div>
+                    </div><a href="HomeAppliances.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    <div class="text">
+                      <h3><a href="detail.html">Pillow</a></h3>
+                      <p class="price"> 
+                        <del></del>₹199.00
+                      </p>
+                      <p class="buttons"><a href="HomeAppliances.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                    </div>
+                    <!-- /.text-->
+                    <div class="ribbon gift">
+                      <div class="theribbon">GIFT</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    <!-- /.ribbon-->
+                  </div>
+                  <!-- /.product            -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="product">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front"><a href="moto.html"><img src="img/sony-headphone.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div> -->
+                      </div>
+                    </div><a href="moto.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    <div class="text">
+                      <h3><a href="moto.html">Sony- Ear Headphones</a></h3>
+                      <p class="price"> 
+                        <del></del>₹1999.00
+                      </p>
+                      <p class="buttons"><a href="moto.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
+                    </div>
+                    <!-- /.text-->
+                    <div class="ribbon sale">
+                      <div class="theribbon">SALE</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    <!-- /.ribbon-->
+                    <div class="ribbon new">
+                      <div class="theribbon">NEW</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    <!-- /.ribbon-->
+                    <div class="ribbon gift">
+                      <div class="theribbon">GIFT</div>
+                      <div class="ribbon-background"></div>
+                    </div>
+                    <!-- /.ribbon-->
+                  </div>
+                  <!-- /.product            -->
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="product">
+                    <div class="flip-container">
+                      <div class="flipper">
+                        <div class="front"><a href="HomeAppliances.html"><img src="img/cleaning-product.webp" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div> -->
+                      </div>
+                    </div><a href="HomeAppliances.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    <div class="text">
+                      <h3><a href="HomeAppliances.html">Spotzero by Milton Elite Spin Mop cleaning</a></h3>
+                      <p class="price"> 
+                        <del></del>₹1,599
+                      </p>
+                      <p class="buttons"><a href="HomeAppliances.html" class="btn btn-outline-secondary">View detail</a><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a></p>
                     </div>
                     <!-- /.text-->
                   </div>
@@ -654,10 +655,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2 mb-lg-0">
-            <p class="text-center text-lg-left">©2019 Your name goes here.</p>
+            <p class="text-center text-lg-left">&copy; <a href="#">www.pearlsys.in</a>, All Right Reserved.</p>
+            
           </div>
           <div class="col-lg-6">
-            <p class="text-center text-lg-right">Template design by <a href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+            
+            <p class="text-center text-lg-right"> Designed By <a href="http://www.pearlsys.in/">PearlSys</a>
               <!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
             </p>
           </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Obaju : e-commerce template</title>
+    <title>Bigcart India: e-commerce template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
@@ -99,6 +99,9 @@
                 <a href="basket.html" class="btn btn-outline-secondary navbar-toggler">
                     <i class="fa fa-shopping-cart"></i>
                 </a>
+                <a href="#" class="btn btn-outline-secondary navbar-toggler" data-toggle="modal" data-target="#login-modal" >
+                  <i class="fa fa-sign-in" aria-hidden="true"></i>
+              </a>
             </div>
             <div id="navigation" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
@@ -347,9 +350,8 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Ladies</a></li>
-                  <li class="breadcrumb-item"><a href="#">Tops</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">White Blouse Armani</li>
+                  <li class="breadcrumb-item"><a href="#">Men</a></li>
+                  <li class="breadcrumb-item"><a href="#">Clothing</a></li>
                 </ol>
               </nav>
             </div>
@@ -357,14 +359,33 @@
               <!--
               *** MENUS AND FILTERS ***
               _________________________________________________________
-              -->
+            -->
               <div class="card sidebar-menu mb-4">
                 <div class="card-header">
                   <h3 class="h4 card-title">Categories</h3>
                 </div>
                 <div class="card-body">
                   <ul class="nav nav-pills flex-column category-menu">
-                    <li><a href="category.html" class="nav-link">prize <span class="badge badge-secondary">42</span></a>
+                    <li>
+                      <a href="category.html" class="nav-link">Home Appliances <span class="badge badge-secondary">42</span></a>
+                      <ul class="list-unstyled">
+                        <li><a href="category.html" class="nav-link">Refrigerators</a></li>
+                        <li><a href="category.html" class="nav-link">Washing Machines</a></li>
+                        <li><a href="category.html" class="nav-link">Microwaves</a></li>
+                        <li><a href="category.html" class="nav-link">Air Conditioners</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="category.html" class="nav-link">Electronics <span class="badge badge-light">123</span></a>
+                      <ul class="list-unstyled">
+                        <li><a href="category.html" class="nav-link">Mobile Phones</a></li>
+                        <li><a href="category.html" class="nav-link">Laptops</a></li>
+                        <li><a href="category.html" class="nav-link">Televisions</a></li>
+                        <li><a href="category.html" class="nav-link">Cameras</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="category.html" class="nav-link">Men's Products <span class="badge badge-secondary">50</span></a>
                       <ul class="list-unstyled">
                         <li><a href="category.html" class="nav-link">T-shirts</a></li>
                         <li><a href="category.html" class="nav-link">Shirts</a></li>
@@ -372,153 +393,207 @@
                         <li><a href="category.html" class="nav-link">Accessories</a></li>
                       </ul>
                     </li>
-                    <li><a href="category.html" class="nav-link active">Brand  <span class="badge badge-light">123</span></a>
+                    <li>
+                      <a href="category.html" class="nav-link">Ladies' Products <span class="badge badge-secondary">60</span></a>
                       <ul class="list-unstyled">
-                        <li><a href="category.html" class="nav-link">T-shirts</a></li>
+                        <li><a href="category.html" class="nav-link">Dresses</a></li>
+                        <li><a href="category.html" class="nav-link">Tops</a></li>
                         <li><a href="category.html" class="nav-link">Skirts</a></li>
-                        <li><a href="category.html" class="nav-link">Pants</a></li>
-                        <li><a href="category.html" class="nav-link">Accessories</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="category.html" class="nav-link">customer rating  <span class="badge badge-secondary">11</span></a>
-                      <ul class="list-unstyled">
-                        <li><a href="category.html" class="nav-link">T-shirts</a></li>
-                        <li><a href="category.html" class="nav-link">Skirts</a></li>
-                        <li><a href="category.html" class="nav-link">Pants</a></li>
                         <li><a href="category.html" class="nav-link">Accessories</a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
               </div>
+              
+              <!-- Mobile RAM section -->
               <div class="card sidebar-menu mb-4">
                 <div class="card-header">
-                  <h3 class="h4 card-title"> Mobile RAM <a href="#" class="btn btn-sm btn-danger pull-right"><i class="fa fa-times-circle"></i> Clear</a></h3>
+                  <h3 class="h4 card-title">Mobile RAM 
+                    <a href="#" class="btn btn-sm btn-danger pull-right">
+                      <i class="fa fa-times-circle"></i> Clear
+                    </a>
+                  </h3>
                 </div>
                 <div class="card-body">
                   <form>
                     <div class="form-group">
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"> Armani  (10)
+                          <input type="checkbox"> 2GB (10)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"> Versace  (12)
+                          <input type="checkbox"> 4GB (12)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"> Carlo Bruni  (15)
+                          <input type="checkbox"> 6GB (15)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"> Jack Honey  (14)
+                          <input type="checkbox"> 8GB (14)
                         </label>
                       </div>
                     </div>
-                    <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
+                    <button class="btn btn-default btn-sm btn-primary">
+                      <i class="fa fa-pencil"></i> Apply
+                    </button>
                   </form>
                 </div>
               </div>
+              
+              <!-- Internal Storage section -->
               <div class="card sidebar-menu mb-4">
                 <div class="card-header">
-                  <h3 class="h4 card-title">Internal Storage <a href="#" class="btn btn-sm btn-danger pull-right"><i class="fa fa-times-circle"></i> Clear</a></h3>
+                  <h3 class="h4 card-title">Internal Storage 
+                    <a href="#" class="btn btn-sm btn-danger pull-right">
+                      <i class="fa fa-times-circle"></i> Clear
+                    </a>
+                  </h3>
                 </div>
                 <div class="card-body">
                   <form>
                     <div class="form-group">
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"><span class="colour white"></span> White (14)
+                          <input type="checkbox"><span class="colour white"></span> 64GB (14)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"><span class="colour blue"></span> Blue (10)
+                          <input type="checkbox"><span class="colour blue"></span> 128GB (10)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"><span class="colour green"></span>  Green (20)
+                          <input type="checkbox"><span class="colour green"></span> 256GB (20)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"><span class="colour yellow"></span>  Yellow (13)
+                          <input type="checkbox"><span class="colour yellow"></span> 512GB (13)
                         </label>
                       </div>
                       <div class="checkbox">
                         <label>
-                          <input type="checkbox"><span class="colour red"></span>  Red (10)
+                          <input type="checkbox"><span class="colour red"></span> 1TB (10)
                         </label>
                       </div>
                     </div>
-                    <button class="btn btn-default btn-sm btn-primary"><i class="fa fa-pencil"></i> Apply</button>
+                    <button class="btn btn-default btn-sm btn-primary">
+                      <i class="fa fa-pencil"></i> Apply
+                    </button>
                   </form>
                 </div>
               </div>
+              
               <!-- *** MENUS AND FILTERS END ***-->
-              <div class="banner"><a href="#"><img src="img/banner.jpg" alt="sales 2014" class="img-fluid"></a></div>
+              <div class="banner"><a href="#"><img src="img/all-detail.jpg" alt="sales 2014" class="img-fluid"></a></div>
             </div>
             <div class="col-lg-9 order-1 order-lg-2">
               <div id="productMain" class="row">
                 <div class="col-md-6">
                   <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
-                    <div class="item"> <img src="img/detailbig1.jpg" alt="" class="img-fluid"></div>
-                    <div class="item"> <img src="img/detailbig2.jpg" alt="" class="img-fluid"></div>
-                    <div class="item"> <img src="img/detailbig3.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="img/Men-Casual-Shirt-0.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="img/Men-Casual-Shirt-3.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="img/Men-Casual-Shirt-2.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="img/Men-Casual-Shirt-1.jpg" alt="" class="img-fluid"></div>
                   </div>
-                  <div class="ribbon sale">
+                  <!-- <div class="ribbon sale">
                     <div class="theribbon">SALE</div>
                     <div class="ribbon-background"></div>
-                  </div>
+                  </div> -->
                   <!-- /.ribbon-->
-                  <div class="ribbon new">
+                  <!-- <div class="ribbon new">
                     <div class="theribbon">NEW</div>
                     <div class="ribbon-background"></div>
-                  </div>
+                  </div> -->
                   <!-- /.ribbon-->
                 </div>
                 <div class="col-md-6">
                   <div class="box">
-                    <h1 class="text-center">White Blouse Armani</h1>
+                    <h1 class="text-center">Lymio Casual Shirt for Men || Shirt for Men</h1>
                     <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
-                    <p class="price">$124.00</p>
-                    <p class="text-center buttons"><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a><a href="basket.html" class="btn btn-outline-primary"><i class="fa fa-heart"></i> Add to wishlist</a></p>
+                    <!-- Discount section -->
+                    <div class="text-center mb-3">
+                      <span class="text-muted" style="text-decoration: line-through; font-size: 1.5rem;">
+                        ₹500
+                      </span> <!-- MRP price -->
+                      <span class="text-danger ms-2" style="font-size: 1.5rem;">
+                        (42% OFF)
+                      </span> <!-- Discount percentage -->
+                    </div>
+                    
+                    <!-- Discounted price -->
+                    <p class="price text-center display-4 text-danger" id="product-price">
+                      ₹299
+                    </p>
+                    <p class="text-center buttons">
+                      <a href="basket.html" class="btn btn-primary btn-lg me-2 add-to-cart-btn" 
+                          data-name="Lymio Casual Shirt for Men " data-price="290">
+                          <i class="fa fa-shopping-cart"></i> Add to cart
+                        </a>
+                        <a href="checkout1.html" class="btn btn-outline-primary"><i class="fa fa-shopping-bag"></i> Buy Now</a></p>
                   </div>
                   <div data-slider-id="1" class="owl-thumbs">
-                    <button class="owl-thumb-item"><img src="img/detailsquare.jpg" alt="" class="img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="img/detailsquare2.jpg" alt="" class="img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="img/detailsquare3.jpg" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/Men-Casual-Shirt-0.jpg" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/Men-Casual-Shirt-3.jpg" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/Men-Casual-Shirt-2.jpg" alt="" class="img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/Men-Casual-Shirt-1.jpg" alt="" class="img-fluid"></button>
                   </div>
                 </div>
               </div>
               <div id="details" class="box">
                 <p></p>
-                <h4>Product details</h4>
-                <p>White lace top, woven, has a round neck, short sleeves, has knitted lining attached</p>
-                <h4>Material &amp; care</h4>
+                <h3>Product Details</h3>
+                <p>The <strong>Motorola Edge 50 Fusion 5G (Marshmallow Blue)</strong> is a powerful smartphone with the following key features:</p>
                 <ul>
-                  <li>Polyester</li>
-                  <li>Machine wash</li>
+                    <li><strong>Display:</strong> 6.55-inch FHD+ OLED display with a 144Hz refresh rate and HDR10+ support for an immersive viewing experience.</li>
+                    <li><strong>Processor:</strong> Powered by the Qualcomm Snapdragon 7s Gen 2 processor, an octa-core chipset clocked at up to 2.4GHz, ensuring efficient multitasking.</li>
+                    <li><strong>Memory:</strong> 8GB of RAM coupled with 128GB of internal storage, providing smooth performance and ample space for apps and media.</li>
+                    <li><strong>Battery:</strong> 4400mAh battery with TurboPower fast charging support.</li>
                 </ul>
-                <h4>Size &amp; Fit</h4>
+            
+                <h3>Technical Details</h3>
+                <table class="moto" style="width: 100%; border-collapse: collapse; margin: 20px auto; font-family: Arial, sans-serif; text-align: left;">
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 12px; background-color: #4CAF50; color: white; text-transform: uppercase; text-align: center;">OS</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; background-color: #2196F3; color: white; text-transform: uppercase; text-align: center;">RAM</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; background-color: #FFC107; color: white; text-transform: uppercase; text-align: center;">GPS</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; background-color: #FF5722; color: white; text-transform: uppercase; text-align: center;">Other Display Features</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">Android</td>
+                        <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">8 GB</td>
+                        <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">GLONASS</td>
+                        <td style="border: 1px solid #ddd; padding: 12px; text-align: center;">Wireless</td>
+                    </tr>
+                </table>
+                
+                <h3>About This Item</h3>
                 <ul>
-                  <li>Regular fit</li>
-                  <li>The model (height 5'8" and chest 33") is wearing a size S</li>
+                    <li>The 50 MP Ultra Pixel OIS Camera features the Sony LYTIA 700C sensor, designed to capture stunning shots at night with advanced low-light capabilities.</li>
+                    <li>4K Video Recording with a 13MP Ultrawide + Macro Camera and a 32 MP Front Camera. The 120-degree ultra-wide-angle lens captures more of the scene, allowing you to go ultra-wide or zoom in effortlessly.</li>
                 </ul>
+                
                 <blockquote>
-                  <p><em>Define style this season with Armani's new range of trendy tops, crafted with intricate details. Create a chic statement look by teaming this lace number with skinny jeans and pumps.</em></p>
+                    <p><em>Define your style this season with Armani's new range of trendy tops, crafted with intricate details. Create a chic statement look by pairing this lace number with skinny jeans and pumps.</em></p>
                 </blockquote>
                 <hr>
                 <div class="social">
-                  <h4>Show it to your friends</h4>
-                  <p><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" class="email"><i class="fa fa-envelope"></i></a></p>
+                    <h4>Share with Your Friends</h4>
+                    <p>
+                        <a href="#" class="external facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="external twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="email"><i class="fa fa-envelope"></i></a>
+                    </p>
                 </div>
-              </div>
+            </div>
               <div class="row same-height-row">
                 <div class="col-md-3 col-sm-6">
                   <div class="box same-height">
@@ -529,13 +604,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="detail.html"><img src="img/Men Gym T Shirts.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/Men Gym T Shirts.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Men-Gym-T-Shirts</h3>
+                      <p class="price">₹280.00</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -544,13 +619,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="detail.html"><img src="img/Women-t-shirt.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/Women-t-shirt.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Women-t-shirt</h3>
+                      <p class="price">₹199.00</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -559,13 +634,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="detail.html"><img src="img/cycle-1.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/cycle-1.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Super-Cycle</h3>
+                      <p class="price">₹3999.00</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -581,13 +656,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="detail.html"><img src="img/pillow-0.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/pillow-0.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/pillow-0.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Pillow</h3>
+                      <p class="price">₹250.00</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -596,13 +671,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="moto.html"><img src="img/moto-1.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="moto.html" class="invisible"><img src="img/moto-1.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Moto-Mobile</h3>
+                      <p class="price">₹17,999</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -611,13 +686,13 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front"><a href="detail.html"><img src="img/Chair-1.jpg" alt="" class="img-fluid"></a></div>
+                        <!-- <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div> -->
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    </div><a href="detail.html" class="invisible"><img src="img/Chair-1.jpg" alt="" class="img-fluid"></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Home-Chair</h3>
+                      <p class="price">₹1999.00</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -697,10 +772,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2 mb-lg-0">
-            <p class="text-center text-lg-left">©2019 Your name goes here.</p>
+            <p class="text-center text-lg-left">&copy; <a href="#">www.pearlsys.in</a>, All Right Reserved.</p>
+            
           </div>
           <div class="col-lg-6">
-            <p class="text-center text-lg-right">Template design by <a href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+            
+            <p class="text-center text-lg-right"> Designed By <a href="http://www.pearlsys.in/">PearlSys</a>
               <!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
             </p>
           </div>

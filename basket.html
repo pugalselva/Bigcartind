@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Obaju : e-commerce template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bigcart India: e-commerce template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all,follow" />
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="vendor/font-awesome/css/font-awesome.min.css"
+    />
     <!-- Google fonts - Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700"
+    />
     <!-- owl carousel-->
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.css"
+    />
     <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet" />
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" />
     <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
   </head>
   <body>
     <!-- navbar-->
@@ -47,291 +62,633 @@
             </div>
           </div>
         </div> -->
-          <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
-            <div class="modal-dialog modal-sm modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Customer Login</h5>
-                        <button type="button" data-dismiss="modal" aria-label="Close" class="close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-                            <div class="form-group">
-                                <input id="email-modal" type="text" placeholder="Email" class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <input id="password-modal" type="password" placeholder="Password" class="form-control" required>
-                            </div>
-                            <p class="text-center">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-sign-in"></i> Log in
-                                </button>
-                            </p>
-                        </form>
-                        <p class="text-center text-muted">Already have an account?</p>
-                        <p class="text-center text-muted">
-                          <a href="register.html"><strong>Register now</strong></a> to enjoy exclusive discounts and offers!
-                      </p>
-                    </div>
-                </div>
+        <div
+          id="login-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="Login"
+          aria-hidden="true"
+          class="modal fade"
+        >
+          <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Customer Login</h5>
+                <button
+                  type="button"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  class="close"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="customer-orders.html" method="post">
+                  <div class="form-group">
+                    <input
+                      id="email-modal"
+                      type="text"
+                      placeholder="Email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      id="password-modal"
+                      type="password"
+                      placeholder="Password"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <p class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa fa-sign-in"></i> Log in
+                    </button>
+                  </p>
+                </form>
+                <p class="text-center text-muted">Already have an account?</p>
+                <p class="text-center text-muted">
+                  <a href="register.html"><strong>Register now</strong></a> to
+                  enjoy exclusive discounts and offers!
+                </p>
+              </div>
             </div>
+          </div>
         </div>
       </div>
       <!-- *** TOP BAR END ***-->
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="index.html" class="navbar-brand home">
-                <img src="img/Bigcart.jpg" alt="Bigcart-logo" class="d-none d-md-inline-block">
-                <img src="img/Bigcart.jpg" alt="Bigcart-logo" class="d-inline-block d-md-none">
-                <span class="sr-only">Bigcart India - go to homepage</span>
+          <a href="index.html" class="navbar-brand home">
+            <img
+              src="img/Bigcart.jpg"
+              alt="Bigcart-logo"
+              class="d-none d-md-inline-block"
+            />
+            <img
+              src="img/Bigcart.jpg"
+              alt="Bigcart-logo"
+              class="d-inline-block d-md-none"
+            />
+            <span class="sr-only">Bigcart India - go to homepage</span>
+          </a>
+          <div class="navbar-buttons">
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#navigation"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-align-justify"></i>
+            </button>
+            <button
+              type="button"
+              data-toggle="collapse"
+              data-target="#search"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <span class="sr-only">Toggle search</span>
+              <i class="fa fa-search"></i>
+            </button>
+            <a
+              href="basket.html"
+              class="btn btn-outline-secondary navbar-toggler"
+            >
+              <i class="fa fa-shopping-cart"></i>
             </a>
-            <div class="navbar-buttons">
-                <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-align-justify"></i>
-                </button>
-                <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler">
-                    <span class="sr-only">Toggle search</span>
-                    <i class="fa fa-search"></i>
-                </button>
-                <a href="basket.html" class="btn btn-outline-secondary navbar-toggler">
-                    <i class="fa fa-shopping-cart"></i>
-                </a>
-            </div>
-            <div id="navigation" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item dropdown menu-large">
-                        <a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Men<b class="caret"></b></a>
-                        <ul class="dropdown-menu megamenu">
-                            <li>
-                                <div class="row">
-                                    <!-- Men's Clothing -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Clothing</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Men's Shoes -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Shoes</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Hiking Shoes</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Men's Accessories -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Accessories</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Bags</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Belts</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Sunglasses</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Caps & Hats</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Kids Section -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Kids</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Clothing</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Shoes</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Accessories</a></li>
-                                        </ul>
-                                        <h5>Featured</h5>
-                                        <div class="banner">
-                                            <a href="#"><img src="img/kids-banner.jpg" alt="Kids Banner" class="img img-fluid"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+            <a href="#" class="btn btn-outline-secondary navbar-toggler" data-toggle="modal" data-target="#login-modal" >
+              <i class="fa fa-sign-in" aria-hidden="true"></i>
+          </a>
+          </div>
+          <div id="navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Men<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Men's Clothing -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Clothing</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >T-shirts</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Shirts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Accessories</a
+                            >
+                          </li>
                         </ul>
-                    </li>
-                    
-                    <li class="nav-item dropdown menu-large">
-                        <a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Ladies<b class="caret"></b></a>
-                        <ul class="dropdown-menu megamenu">
-                            <li>
-                                <div class="row">
-                                    <!-- Women's Clothing -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Clothing</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">T-shirts</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Shirts</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Pants</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Accessories</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Women's Shoes -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Shoes</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Trainers</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Sandals</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Hiking Shoes</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Casual</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Women's Accessories -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Accessories</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Jewelry</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Bags</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Scarves</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Sunglasses</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Kids Section -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Kids</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Clothing</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Shoes</a></li>
-                                            <li class="nav-item"><a href="category.html" class="nav-link">Kids Accessories</a></li>
-                                        </ul>
-                                        <h5>Featured</h5>
-                                        <div class="banner">
-                                            <a href="#"><img src="img/kids-banner.jpg" alt="Kids Banner" class="img img-fluid"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                      </div>
+                      <!-- Men's Shoes -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Shoes</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Trainers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Sandals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Hiking Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Casual</a>
+                          </li>
                         </ul>
-                    </li>
-    
-                    <li class="nav-item dropdown menu-large">
-                        <a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Home Appliances<b class="caret"></b></a>
-                        <ul class="dropdown-menu megamenu">
-                            <li>
-                                <div class="row">
-                                    <!-- Kitchen Appliances -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Kitchen Appliances</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="microwave.html" class="nav-link">Microwaves</a></li>
-                                            <li class="nav-item"><a href="refrigerators.html" class="nav-link">Refrigerators</a></li>
-                                            <li class="nav-item"><a href="dishwashers.html" class="nav-link">Dishwashers</a></li>
-                                            <li class="nav-item"><a href="mixers.html" class="nav-link">Blenders & Mixers</a></li>
-                                            <li class="nav-item"><a href="coffee-makers.html" class="nav-link">Coffee Makers</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Cleaning Appliances -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Cleaning Appliances</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="vacuum-cleaners.html" class="nav-link">Vacuum Cleaners</a></li>
-                                            <li class="nav-item"><a href="washing-machines.html" class="nav-link">Washing Machines</a></li>
-                                            <li class="nav-item"><a href="steam-cleaners.html" class="nav-link">Steam Cleaners</a></li>
-                                            <li class="nav-item"><a href="irons.html" class="nav-link">Irons</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Other Appliances -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Other Appliances</h5>
-                                        <ul class="list-unstyled mb-3">
-                                            <li class="nav-item"><a href="air-purifiers.html" class="nav-link">Air Purifiers</a></li>
-                                            <li class="nav-item"><a href="humidifiers.html" class="nav-link">Humidifiers</a></li>
-                                            <li class="nav-item"><a href="heaters.html" class="nav-link">Heaters</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- Featured Section -->
-                                    <div class="col-md-6 col-lg-3">
-                                        <h5>Featured</h5>
-                                        <div class="banner">
-                                            <a href="#"><img src="img/home-appliances-banner.jpg" alt="Home Appliances Banner" class="img img-fluid"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                      </div>
+                      <!-- Men's Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Bags</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Belts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Sunglasses</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Caps & Hats</a
+                            >
+                          </li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown menu-large">
-                      <a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200" class="dropdown-toggle nav-link">Electronics<b class="caret"></b></a>
-                      <ul class="dropdown-menu megamenu">
-                        <li>
-                          <div class="row">
-                            <!-- Mobiles -->
-                            <div class="col-md-6 col-lg-3">
-                              <h5>Mobiles</h5>
-                              <ul class="list-unstyled mb-3">
-                                <li class="nav-item"><a href="smartphones.html" class="nav-link">Smartphones</a></li>
-                                <li class="nav-item"><a href="feature-phones.html" class="nav-link">Feature Phones</a></li>
-                                <li class="nav-item"><a href="mobile-cases.html" class="nav-link">Mobile Cases</a></li>
-                                <li class="nav-item"><a href="mobile-chargers.html" class="nav-link">Mobile Chargers</a></li>
-                                <li class="nav-item"><a href="power-banks.html" class="nav-link">Power Banks</a></li>
-                              </ul>
-                            </div>
-                    
-                            <!-- Accessories -->
-                            <div class="col-md-6 col-lg-3">
-                              <h5>Accessories</h5>
-                              <ul class="list-unstyled mb-3">
-                                <li class="nav-item"><a href="headphones.html" class="nav-link">Headphones</a></li>
-                                <li class="nav-item"><a href="smart-watches.html" class="nav-link">Smart Watches</a></li>
-                                <li class="nav-item"><a href="charging-cables.html" class="nav-link">Charging Cables</a></li>
-                                <li class="nav-item"><a href="phone-stands.html" class="nav-link">Phone Stands</a></li>
-                                <li class="nav-item"><a href="screen-protectors.html" class="nav-link">Screen Protectors</a></li>
-                              </ul>
-                            </div>
-                    
-                            <!-- Speakers -->
-                            <div class="col-md-6 col-lg-3">
-                              <h5>Speakers</h5>
-                              <ul class="list-unstyled mb-3">
-                                <li class="nav-item"><a href="bluetooth-speakers.html" class="nav-link">Bluetooth Speakers</a></li>
-                                <li class="nav-item"><a href="smart-speakers.html" class="nav-link">Smart Speakers</a></li>
-                                <li class="nav-item"><a href="home-theaters.html" class="nav-link">Home Theaters</a></li>
-                                <li class="nav-item"><a href="soundbars.html" class="nav-link">Soundbars</a></li>
-                                <li class="nav-item"><a href="portable-speakers.html" class="nav-link">Portable Speakers</a></li>
-                              </ul>
-                            </div>
-                    
-                            <!-- Health Care Appliances -->
-                            <div class="col-md-6 col-lg-3">
-                              <h5>Health Care Appliances</h5>
-                              <ul class="list-unstyled mb-3">
-                                <li class="nav-item"><a href="blood-pressure-monitors.html" class="nav-link">Blood Pressure Monitors</a></li>
-                                <li class="nav-item"><a href="thermometers.html" class="nav-link">Digital Thermometers</a></li>
-                                <li class="nav-item"><a href="weighing-scales.html" class="nav-link">Weighing Scales</a></li>
-                                <li class="nav-item"><a href="massagers.html" class="nav-link">Massagers</a></li>
-                                <li class="nav-item"><a href="air-purifiers.html" class="nav-link">Air Purifiers</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                    
+                      </div>
+                      <!-- Kids Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kids</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Clothing</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Accessories</a
+                            >
+                          </li>
+                        </ul>
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/kids-banner.jpg"
+                              alt="Kids Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
-                  
-                <div class="navbar-nav mr-auto">
-                  <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
-                  <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>Cart</span></a></div>
-                  <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="#" data-toggle="modal" data-target="#login-modal" class="btn btn-primary navbar-btn"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Login</span></a></div>
-                </div>
+              </li>
+
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Ladies<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Women's Clothing -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Clothing</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >T-shirts</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Shirts</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Pants</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Accessories</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Women's Shoes -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Shoes</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Trainers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Sandals</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Hiking Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Casual</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Women's Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Jewelry</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Bags</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link">Scarves</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Sunglasses</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Kids Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kids</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Clothing</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Shoes</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="category.html" class="nav-link"
+                              >Kids Accessories</a
+                            >
+                          </li>
+                        </ul>
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/kids-banner.jpg"
+                              alt="Kids Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Home Appliances<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Kitchen Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Kitchen Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="microwave.html" class="nav-link"
+                              >Microwaves</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="refrigerators.html" class="nav-link"
+                              >Refrigerators</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="dishwashers.html" class="nav-link"
+                              >Dishwashers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mixers.html" class="nav-link"
+                              >Blenders & Mixers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="coffee-makers.html" class="nav-link"
+                              >Coffee Makers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Cleaning Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Cleaning Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="vacuum-cleaners.html" class="nav-link"
+                              >Vacuum Cleaners</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="washing-machines.html" class="nav-link"
+                              >Washing Machines</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="steam-cleaners.html" class="nav-link"
+                              >Steam Cleaners</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="irons.html" class="nav-link">Irons</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Other Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Other Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="air-purifiers.html" class="nav-link"
+                              >Air Purifiers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="humidifiers.html" class="nav-link"
+                              >Humidifiers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="heaters.html" class="nav-link">Heaters</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Featured Section -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Featured</h5>
+                        <div class="banner">
+                          <a href="#"
+                            ><img
+                              src="img/home-appliances-banner.jpg"
+                              alt="Home Appliances Banner"
+                              class="img img-fluid"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown menu-large">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  data-hover="dropdown"
+                  data-delay="200"
+                  class="dropdown-toggle nav-link"
+                  >Electronics<b class="caret"></b
+                ></a>
+                <ul class="dropdown-menu megamenu">
+                  <li>
+                    <div class="row">
+                      <!-- Mobiles -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Mobiles</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="smartphones.html" class="nav-link"
+                              >Smartphones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="feature-phones.html" class="nav-link"
+                              >Feature Phones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mobile-cases.html" class="nav-link"
+                              >Mobile Cases</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="mobile-chargers.html" class="nav-link"
+                              >Mobile Chargers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="power-banks.html" class="nav-link"
+                              >Power Banks</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Accessories -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Accessories</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="headphones.html" class="nav-link"
+                              >Headphones</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="smart-watches.html" class="nav-link"
+                              >Smart Watches</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="charging-cables.html" class="nav-link"
+                              >Charging Cables</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="phone-stands.html" class="nav-link"
+                              >Phone Stands</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="screen-protectors.html" class="nav-link"
+                              >Screen Protectors</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Speakers -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Speakers</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a href="bluetooth-speakers.html" class="nav-link"
+                              >Bluetooth Speakers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="smart-speakers.html" class="nav-link"
+                              >Smart Speakers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="home-theaters.html" class="nav-link"
+                              >Home Theaters</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="soundbars.html" class="nav-link"
+                              >Soundbars</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="portable-speakers.html" class="nav-link"
+                              >Portable Speakers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Health Care Appliances -->
+                      <div class="col-md-6 col-lg-3">
+                        <h5>Health Care Appliances</h5>
+                        <ul class="list-unstyled mb-3">
+                          <li class="nav-item">
+                            <a
+                              href="blood-pressure-monitors.html"
+                              class="nav-link"
+                              >Blood Pressure Monitors</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="thermometers.html" class="nav-link"
+                              >Digital Thermometers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="weighing-scales.html" class="nav-link"
+                              >Weighing Scales</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="massagers.html" class="nav-link"
+                              >Massagers</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a href="air-purifiers.html" class="nav-link"
+                              >Air Purifiers</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="navbar-nav mr-auto">
+              <div
+                id="search-not-mobile"
+                class="navbar-collapse collapse"
+              ></div>
+              <a
+                data-toggle="collapse"
+                href="#search"
+                class="btn navbar-btn btn-primary d-none d-lg-inline-block"
+                ><span class="sr-only">Toggle search</span
+                ><i class="fa fa-search"></i
+              ></a>
+              <div
+                id="basket-overview"
+                class="navbar-collapse collapse d-none d-lg-block"
+              >
+                <a href="basket.html" class="btn btn-primary navbar-btn"
+                  ><i class="fa fa-shopping-cart"></i><span>Cart</span></a
+                >
+              </div>
+              <div
+                id="basket-overview"
+                class="navbar-collapse collapse d-none d-lg-block"
+              >
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#login-modal"
+                  class="btn btn-primary navbar-btn"
+                  ><i class="fa fa-sign-in" aria-hidden="true"></i
+                  ><span>Login</span></a
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
-    
+      </nav>
+
       <div id="search" class="collapse">
         <div class="container">
           <form role="search" class="ml-auto">
             <div class="input-group">
-              <input type="text" placeholder="Search" class="form-control">
+              <input type="text" placeholder="Search" class="form-control" />
               <div class="input-group-append">
-                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                <button type="button" class="btn btn-primary">
+                  <i class="fa fa-search"></i>
+                </button>
               </div>
             </div>
           </form>
@@ -348,66 +705,47 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">Shopping cart</li>
+                  <li aria-current="page" class="breadcrumb-item active">
+                    Shopping cart
+                  </li>
                 </ol>
               </nav>
             </div>
             <div id="basket" class="col-lg-9">
               <div class="box">
                 <form method="post" action="checkout1.html">
-                  <h1>Shopping cart</h1>
-                  <p class="text-muted">You currently have 3 item(s) in your cart.</p>
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th colspan="2">Product</th>
-                          <th>Quantity</th>
-                          <th>Unit price</th>
-                          <th>Discount</th>
-                          <th colspan="2">Total</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><a href="#"><img src="img/detailsquare.jpg" alt="White Blouse Armani"></a></td>
-                          <td><a href="#">White Blouse Armani</a></td>
-                          <td>
-                            <input type="number" value="2" class="form-control">
-                          </td>
-                          <td>$123.00</td>
-                          <td>$0.00</td>
-                          <td>$246.00</td>
-                          <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                        </tr>
-                        <tr>
-                          <td><a href="#"><img src="img/basketsquare.jpg" alt="Black Blouse Armani"></a></td>
-                          <td><a href="#">Black Blouse Armani</a></td>
-                          <td>
-                            <input type="number" value="1" class="form-control">
-                          </td>
-                          <td>$200.00</td>
-                          <td>$0.00</td>
-                          <td>$200.00</td>
-                          <td><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                        </tr>
-                      </tbody>
-                      <tfoot>
-                        <tr>
-                          <th colspan="5">Total</th>
-                          <th colspan="2">$446.00</th>
-                        </tr>
-                      </tfoot>
-                    </table>
+                    <h1>Shopping cart</h1>
+                    <p class="text-muted">You currently have <span id="item-count">0</span> item(s) in your cart.</p>
+                    <div class="table-responsive">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th colspan="2">Product</th>
+                                  <th>Quantity</th>
+                                  <th>Unit Price</th>
+                                  <th>Discount</th>
+                                  <th>Total</th>
+                                  <th>Action</th>
+                              </tr>
+                          </thead>
+                          <tbody id="cart-items">
+                              <!-- Cart items will be dynamically added here -->
+                          </tbody>
+                          <tfoot>
+                              <tr>
+                                  <th colspan="5">Total Amount</th>
+                                  <th id="total-price">₹0.00</th>
+                              </tr>
+                          </tfoot>
+                      </table>
                   </div>
-                  <!-- /.table-responsive-->
-                  <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
-                    <div class="left"><a href="category.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i> Continue shopping</a></div>
-                    <div class="right">
-                      <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i> Update cart</button>
-                      <button type="submit" class="btn btn-primary">Proceed to checkout <i class="fa fa-chevron-right"></i></button>
+                    <!-- /.table-responsive-->
+                    <div class="box-footer d-flex justify-content-between flex-column flex-lg-row">
+                        <div class="left"><a href="detail.html" class="btn btn-outline-secondary"><i class="fa fa-chevron-left"></i> Continue shopping</a></div>
+                        <div class="right">
+                            <button type="submit" class="btn btn-primary">Proceed to checkout <i class="fa fa-chevron-right"></i></button>
+                        </div>
                     </div>
-                  </div>
                 </form>
               </div>
               <!-- /.box-->
@@ -421,13 +759,30 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product2.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front">
+                          <a href="moto.html"
+                            ><img
+                              src="img/moto-1.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="detail.html"
+                            ><img
+                              src=""
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <a href="detail.html" class="invisible"
+                      ><img src="img/product1.jpg" alt="" class="img-fluid"
+                    /></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Moto-Mobile</h3>
+                      <p class="price">₹15999</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -436,13 +791,30 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product1.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front">
+                          <a href="detail.html"
+                            ><img
+                              src="img/Men Gym T Shirts.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="detail.html"
+                            ><img
+                              src=""
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product1.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <a href="detail.html" class="invisible"
+                      ><img src="img/product1.jpg" alt="" class="img-fluid"
+                    /></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Gym T Shirts</h3>
+                      <p class="price">₹199</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -451,13 +823,30 @@
                   <div class="product same-height">
                     <div class="flip-container">
                       <div class="flipper">
-                        <div class="front"><a href="detail.html"><img src="img/product3.jpg" alt="" class="img-fluid"></a></div>
-                        <div class="back"><a href="detail.html"><img src="img/product3_2.jpg" alt="" class="img-fluid"></a></div>
+                        <div class="front">
+                          <a href="detail.html"
+                            ><img
+                              src="img/cycle-1.jpg"
+                              alt="cycle"
+                              class="img-fluid"
+                          /></a>
+                        </div>
+                        <div class="back">
+                          <a href="detail.html"
+                            ><img
+                              src="img/.jpg"
+                              alt=""
+                              class="img-fluid"
+                          /></a>
+                        </div>
                       </div>
-                    </div><a href="detail.html" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <a href="detail.html" class="invisible"
+                      ><img src="img/product1.jpg" alt="" class="img-fluid"
+                    /></a>
                     <div class="text">
-                      <h3>Fur coat</h3>
-                      <p class="price">$143</p>
+                      <h3>Super-Cycle</h3>
+                      <p class="price">₹2999</p>
                     </div>
                   </div>
                   <!-- /.product-->
@@ -468,41 +857,35 @@
             <div class="col-lg-3">
               <div id="order-summary" class="box">
                 <div class="box-header">
-                  <h3 class="mb-0">Order summary</h3>
+                    <h3 class="mb-0">Order summary</h3>
                 </div>
-                <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
+                <p class="text-muted">
+                    Shipping and additional costs are calculated based on the values you have entered.
+                </p>
                 <div class="table-responsive">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td>Order subtotal</td>
-                        <th>$446.00</th>
-                      </tr>
-                      <tr>
-                        <td>Shipping and handling</td>
-                        <th>$10.00</th>
-                      </tr>
-                      <tr>
-                        <td>Tax</td>
-                        <th>$0.00</th>
-                      </tr>
-                      <tr class="total">
-                        <td>Total</td>
-                        <th>$456.00</th>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <table class="table">
+                        <tbody>
+                            <!-- The rows will be populated dynamically by jQuery -->
+                        </tbody>
+                    </table>
                 </div>
-              </div>
+            </div>
+            <!-- end tax -->
               <div class="box">
                 <div class="box-header">
                   <h4 class="mb-0">Coupon code</h4>
                 </div>
-                <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
+                <p class="text-muted">
+                  If you have a coupon code, please enter it in the box below.
+                </p>
                 <form>
                   <div class="input-group">
-                    <input type="text" class="form-control"><span class="input-group-append">
-                      <button type="button" class="btn btn-primary"><i class="fa fa-gift"></i></button></span>
+                    <input type="text" class="form-control" /><span
+                      class="input-group-append"
+                    >
+                      <button type="button" class="btn btn-primary">
+                        <i class="fa fa-gift"></i></button
+                    ></span>
                   </div>
                   <!-- /input-group-->
                 </form>
@@ -528,10 +911,14 @@
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
-            <hr>
+            <hr />
             <h4 class="mb-3">User section</h4>
             <ul class="list-unstyled">
-              <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#login-modal"
+                  >Login</a
+                >
+              </li>
               <li><a href="register.html">Regiter</a></li>
             </ul>
           </div>
@@ -555,13 +942,29 @@
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Where to find us</h4>
-            <p><strong>Bigcart India Ltd.</strong><br>195' 2nd STREET,<br>MGB THEATRE ROAD,<br>TIRUPUR. <br><strong>641 604</strong></p><a href="contact.html">Go to contact page</a>
-            <hr class="d-block d-md-none">
+            <p>
+              <strong>Bigcart India Ltd.</strong><br />195' 2nd STREET,<br />MGB
+              THEATRE ROAD,<br />TIRUPUR. <br /><strong>641 604</strong>
+            </p>
+            <a href="contact.html">Go to contact page</a>
+            <hr class="d-block d-md-none" />
           </div>
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Stay in touch</h4>
-            <p class="social"><a href="#" class="facebook external"><i class="fa fa-facebook"></i></a><a href="#" class="twitter external"><i class="fa fa-twitter"></i></a><a href="#" class="instagram external"><i class="fa fa-instagram"></i></a><a href="#" class="gplus external"><i class="fa fa-google-plus"></i></a><a href="#" class="email external"><i class="fa fa-envelope"></i></a></p>
+            <p class="social">
+              <a href="#" class="facebook external"
+                ><i class="fa fa-facebook"></i></a
+              ><a href="#" class="twitter external"
+                ><i class="fa fa-twitter"></i></a
+              ><a href="#" class="instagram external"
+                ><i class="fa fa-instagram"></i></a
+              ><a href="#" class="gplus external"
+                ><i class="fa fa-google-plus"></i></a
+              ><a href="#" class="email external"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </p>
           </div>
           <!-- /.col-lg-3-->
         </div>
@@ -571,8 +974,7 @@
     </div>
     <!-- /#footer-->
     <!-- *** FOOTER END ***-->
-    
-    
+
     <!--
     *** COPYRIGHT ***
     _________________________________________________________
@@ -581,10 +983,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2 mb-lg-0">
-            <p class="text-center text-lg-left">©2019 Your name goes here.</p>
+            <p class="text-center text-lg-left">&copy; <a href="#">www.pearlsys.in</a>, All Right Reserved.</p>
+            
           </div>
           <div class="col-lg-6">
-            <p class="text-center text-lg-right">Template design by <a href="https://bootstrapious.com/p/big-bootstrap-tutorial">Bootstrapious</a>
+            
+            <p class="text-center text-lg-right"> Designed By <a href="http://www.pearlsys.in/">PearlSys</a>
               <!-- If you want to remove this backlink, pls purchase an Attribution-free License @ https://bootstrapious.com/p/obaju-e-commerce-template. Big thanks!-->
             </p>
           </div>
@@ -595,9 +999,84 @@
     <!-- JavaScript files-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"></script>
     <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.js"></script>
     <script src="js/front.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+    // Function to render cart items
+    function renderCart() {
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        var cartItemsContainer = $('#cart-items');
+        var totalPrice = 0;
+        var itemCount = 0;
+
+        // Clear the cart items container before appending
+        cartItemsContainer.empty();
+
+        // Loop through each item in the cart and create the HTML structure
+        cart.forEach(function (item, index) {
+            var itemTotal = item.quantity * item.price;
+            totalPrice += itemTotal;
+            itemCount += item.quantity;
+
+            var itemHTML = `
+                <tr>
+                    <td><a href="#"><img src="${item.img}" alt="${item.name}" width="50"></a></td>
+                    <td><a href="#">${item.name}</a></td>
+                    <td><input type="number" value="${item.quantity}" class="form-control quantity-input" data-index="${index}"></td>
+                    <td>₹${item.price}</td>
+                    <td>₹0.00</td>
+                    <td>₹${itemTotal}</td>
+                    <td><a href="#" class="remove-item" data-index="${index}"><i class="fa fa-trash-o"></i></a></td>
+                </tr>`;
+
+            cartItemsContainer.append(itemHTML);
+        });
+
+        // Update total price
+        $('#total-price').text(`₹${totalPrice.toFixed(2)}`);
+    }
+
+    // Function to remove a product from the cart
+    function removeFromCart(index) {
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+    }
+
+    // Function to update the quantity of a product in the cart
+    function updateQuantity(index, newQuantity) {
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart[index].quantity = newQuantity;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+    }
+
+    // Event listener for removing item
+    $(document).on('click', '.remove-item', function (e) {
+        e.preventDefault();
+        var index = $(this).data('index');
+        removeFromCart(index);
+        alert(" Are you sure you want to remove this item!");
+
+    });
+
+    // Event listener for updating quantity
+    $(document).on('change', '.quantity-input', function () {
+        var index = $(this).data('index');
+        var newQuantity = parseInt($(this).val());
+        updateQuantity(index, newQuantity);
+    });
+
+    // Initial render of the cart on page load
+    renderCart();
+});
+
+    </script>
+    
   </body>
 </html>

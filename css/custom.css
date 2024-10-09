@@ -116,6 +116,278 @@
 .premium:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+ /* banner 2nd  */
+ h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #333;
+  }
+  .lead {
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+  }
+  .box.slideshow {
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .owl-carousel .item img {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  .owl-carousel .item:hover img {
+    transform: scale(1.05);
+  }
+/* .owl-theme .owl-dots .owl-dot {
+  background: #333;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: background 0.3s;
+}
+.owl-theme .owl-dots .owl-dot.active {
+  background: #ff4081;
+}
+       */
+
+       /* Hot This Week */
+       h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      h3 a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: #555;
+        text-transform: capitalize;
+      }
+      #hot .box {
+        background: linear-gradient(to right, #f8f9fa, #ffffff);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      .product {
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      }
+      .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      .flip-container .front img {
+        transition: transform 0.5s ease;
+      }
+      .flip-container:hover .front img {
+        transform: scale(1.1);
+      }
+      .price del {
+        color: #999;
+        font-size: 14px;
+        text-decoration: line-through;
+      }
+      .price {
+        color: #e60023;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .ribbon .theribbon {
+        background-color: #FF9900;
+        color: white;
+        font-size: 12px;
+        padding: 5px 10px;
+      }
+      
+      /*From our blog  */
+      h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 34px;
+        letter-spacing: 1px;
+        color: #333;
+      }
+      p.lead {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: #555;
+      }
+      p.lead a {
+        color: #FF9900;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+      }
+      p.lead a:hover {
+        color: #FF9900;
+      }
+      
+      /*Fashion now  */
+      h4 {
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      
+      .author-category {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #888;
+      }
+      
+      .intro {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 1.7;
+      }
+      .post {
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .post:hover {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+      /* Add to */
+      .btn-primary {
+        background-color: #FF9900;
+        border: none;
+        padding: 8px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        /* border-radius: 20px; */
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .btn-primary:hover {
+        background-color: #FF9900;
+      }
+      /* Buy now */
+      .btn-outline-primary{
+        background-color: #FF9900;
+        color: #ffffff;
+        border: none;
+        padding: 8px 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        /* border-radius: 20px; */
+        transition: background-color 0.3s ease-in-out;
+      }
+      .btn-outline-primary:hover{
+        background-color: #FF9900;
+      }
+            
+      /*  */
+      #advantages .box {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    #advantages .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    }
+    
+    #advantages .icon {
+        font-size: 50px;
+        color: #ff6f61;
+        margin-bottom: 20px;
+    }
+    
+    #advantages h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    
+    #advantages p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #777;
+    }
+    
+    #advantages .box a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    #advantages .box a:hover {
+        color: #ff6f61;
+    }
+
+    /* You may also like these products */
+
+    #box {
+        position: relative;
+        padding: 20px;
+        border-radius: 8px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    
+    #box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+        z-index: 1;
+    }
+    
+    #box h3 {
+        position: relative;
+        z-index: 2;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+    
+    /* delete action */
+    /* Modal center alignment */
+    .modal-content {
+      text-align: center;
+      padding: 0.1rem;
+  }
+
+  .modal-body {
+      font-size: 1.0rem;
+      font-weight: 500;
+  }
+  .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+  /* Delete button custom color */
+  
+    
+    
+      
+      
+                                    
 
 
 
